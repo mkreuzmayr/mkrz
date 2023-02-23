@@ -1,0 +1,15 @@
+# dependencies
+node_modules
+
+# build
+dist
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+.pnpm-debug.log*
+
+# env files
+.env*

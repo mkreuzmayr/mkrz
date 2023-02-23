@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    /* Project Options */
+    "composite": false,
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+
+    /* Compilation Options */
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+
+    /* Emit Options */
+    "noEmit": true, // I am using tsup to emit the code
+    "outDir": "dist",
+    "inlineSources": false,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "removeComments": true,
+
+    /* Type-Checking Options */
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "useUnknownInCatchVariables": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    /* Interop Constraints */
+    "esModuleInterop": true, // this enables allowSyntheticDefaultImports
+    "forceConsistentCasingInFileNames": true,
+
+    /* Other Options */
+    "skipLibCheck": true
+  },
+  "include": ["src", "tsup.config.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "{{name}}",
+  "author": "{{author}}",
+  "version": "0.1.0",
+  "description": "",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup src/index.ts",
+    "start": "node dist/index.js",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "prettier": "latest",
+    "tsup": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}
